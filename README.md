@@ -50,15 +50,6 @@ The above example will replace the file C:\temp\LogFile.log if it exists and add
 [2018-09-25 15:06:31] : This is a string
 ```
 
-The data would look like this in C:\temp\ServersByOs.xlsx:
-
-```text  
-  |   ServerName   |   OSVersion  | InstalledDate |
-  -------------------------------------------------
-  | firstserver01  | Windows 2012 | 03/05/2016    |
-  | secondserver02 | RedHat 5	  | 01/02/2015    |
-```
-
 ## Example 2
 ```powershell
 Write-Log -InputObject "File not found!" -LogPath C:\temp\LogFile.log -LogLevelError
